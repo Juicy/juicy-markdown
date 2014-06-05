@@ -1,0 +1,71 @@
+<!--
+Copyright 2014 Starcounter. All rights reserved.
+-->
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<script src="bower_components/marked/lib/marked.js"></script>
+<script src="vendor/highlightjs/highlight.min.js"></script>
+
+<polymer-element name="sgb-markdownview" attributes="value">
+
+	<template>
+
+		<link rel="stylesheet" href="../vendor/highlightjs/default.min.css">
+
+		<style>
+
+			:host {
+
+        		overflow: auto;
+			}
+
+			#preview {
+				
+				height: 100%;
+				width: 100%;
+			}	
+
+			img {
+				width: 100%;
+			}	
+		</style>
+
+		<!-- TODO: try to remove this layer -->
+		<span id="preview"></span>
+
+	</template>
+
+	<script>
+
+	    "use strict";
+
+	    Polymer('sgb-markdownview', {
+	    	value: "",
+	    	options: {},
+			created: function() { 
+
+				this.options = {
+					renderer: new marked.Renderer(),
+					gfm: true,
+					tables: true,
+					breaks: true,
+					pedantic: true,
+					sanitize: true,
+					smartLists: true,
+					smartypants: false,
+					highlight: function (code) {
+						return hljs.highlightAuto(code).value;
+					}						
+				};
+			},
+	      	valueChanged: function( oldValue, newValue) {
+
+				this.parseText( newValue );
+	      	},
+	      	parseText: function( text) {
+
+	      		this.$.preview.innerHTML = marked(text,this.options);
+	      	}
+	    });
+	</script>
+</polymer-element>

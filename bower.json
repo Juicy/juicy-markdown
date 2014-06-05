@@ -1,0 +1,21 @@
+{
+  "name": "sgb-markdownview",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Smorgasbord-Development/sgb-markdownview",
+  "authors": [
+    "andwah <anders.wahlgren@societyobjects.com>"
+  ],
+  "description": "Markdown viewer",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#~0.3.1",
+    "marked": "~0.3.2"
+  }
+}
