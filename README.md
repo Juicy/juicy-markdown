@@ -1,5 +1,4 @@
 # &lt;sgb-markdownview&gt;
-================
 
 GitHub Flavored Markdown (GFM) viewer
 
