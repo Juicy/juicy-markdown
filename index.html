@@ -1,10 +1,24 @@
-# &lt;sgb-markdownview&gt;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;sgb-markdownview&gt;</title>
+    <!-- <link rel="stylesheet" href="http://juicy.github.io/juicy-tile-list/examples/github-markdown.css"> -->
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="//cdn.jsdelivr.net/polymer.platform/0.3.4/platform.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="sgb-markdownview.html">
+</head>
+<body>
+    <!-- Using Custom Elements -->
+    <sgb-markdownview value="# &lt;sgb-markdownview&gt;
 
 > Polymer Element with GitHub Flavored Markdown (GFM) viewer
 
-## Demo
+## Demo: Entire page is a content of the &lt;sgb-markdownview&gt;, check the source!
 
-[Check it live!](http://Smorgasbord-Development.github.io/sgb-markdownview)
 
 ## Install
 
@@ -21,19 +35,19 @@ Or [download as ZIP](https://github.com/Smorgasbord-Development/sgb-markdownview
 1. Import Web Components' polyfill:
 
     ```html
-    <script src="bower_components/platform/platform.js"></script>
+    <script src=&quot;bower_components/platform/platform.js&quot;></script>
     ```
 
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/sgb-markdownview/sgb-markdownview.html">
+    <link rel=&quot;import&quot; href=&quot;bower_components/sgb-markdownview/sgb-markdownview.html&quot;>
     ```
 
 3. Start using it!
 
     ```html
-    <my-element value="# Markdown here"></my-element>
+    <my-element value=&quot;# Markdown here&quot;></my-element>
     ```
 
 ## Options
@@ -54,3 +68,7 @@ Attribute | Options  | Default | Description
 ## History
 
 For detailed changelog, check [Releases](https://github.com/my-user/my-repo/releases).
+"></sgb-markdownview>
+
+</body>
+</html>
