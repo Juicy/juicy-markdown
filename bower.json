@@ -7,7 +7,6 @@
     "Tomek Wytrebowicz <tomalecpub@gmail.com>"
   ],
   "description": "Markdown viewer",
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
