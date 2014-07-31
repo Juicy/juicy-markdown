@@ -11,13 +11,24 @@
     <link rel="import" href="sgb-markdownview.html">
 </head>
 <body>
+<a href="https://github.com/Smorgasbord-Development/sgb-markdownview"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 9;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
     <!-- Using Custom Elements -->
     <sgb-markdownview value="# &lt;sgb-markdownview&gt;
 
 > Polymer Element with GitHub Flavored Markdown (GFM) viewer
 
-## Demo: Entire page is a content of the &lt;sgb-markdownview&gt;, check the source!
+## Demo:
 
+```html
+<sgb-markdownview value=&quot;# &lt;sgb-markdownview&gt;
+
+> Polymer Element with GitHub Flavored Markdown (GFM) viewer
+
+## Demo: ...
+&quot;></sgb-markdownview>
+```
+Entire page is a content of the &lt;sgb-markdownview&gt;, check the source!
 
 ## Install
 
@@ -51,9 +62,10 @@ Or [download as ZIP](https://github.com/Smorgasbord-Development/sgb-markdownview
 
 ## Options
 
-Attribute | Options  | Default | Description
----       | ---      | ---     | ---
-`value`   | *string* | ``      | Markdown to render.
+Attribute | Options   | Default | Description
+---       | ---       | ---     | ---
+`value`   | *string*  | ``      | Markdown to render.
+`ghcss`   | *boolean* | `false` | Should ghithub-markdown.css be imported?
 
 
 ## Contributing
@@ -67,7 +79,7 @@ Attribute | Options  | Default | Description
 ## History
 
 For detailed changelog, check [Releases](https://github.com/my-user/my-repo/releases).
-"></sgb-markdownview>
+" ghcss></sgb-markdownview>
 
 </body>
 </html>

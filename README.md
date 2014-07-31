@@ -41,6 +41,7 @@ Or [download as ZIP](https://github.com/Smorgasbord-Development/sgb-markdownview
 Attribute | Options  | Default | Description
 ---       | ---      | ---     | ---
 `value`   | *string* | ``      | Markdown to render.
+`ghcss`   | *boolean* | `false` | Should ghithub-markdown.css be imported?
 
 
 ## Contributing

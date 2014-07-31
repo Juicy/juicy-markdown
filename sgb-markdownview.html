@@ -6,11 +6,15 @@ Copyright 2014 Smörgåsbord Development. All rights reserved.
 <script src="../marked/lib/marked.js"></script>
 <script src="vendor/highlightjs/highlight.min.js"></script>
 
-<polymer-element name="sgb-markdownview" attributes="value">
+<polymer-element name="sgb-markdownview" attributes="value ghcss">
 
 	<template>
 
-    	<link rel="stylesheet" href="../github-markdown-css/github-markdown.css">
+		<template if="{{ghcss}}">
+			<style>
+			 @import "../github-markdown-css/github-markdown.css";
+			</style>
+    	</template>
 		<link rel="stylesheet" href="vendor/highlightjs/default.min.css">
 
 		<style>
@@ -42,6 +46,7 @@ Copyright 2014 Smörgåsbord Development. All rights reserved.
 	    Polymer('sgb-markdownview', {
 	    	value: "",
 	    	options: {},
+	    	ghcss: false,
 			created: function() { 
 
 				this.options = {
