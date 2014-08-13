@@ -1,20 +1,20 @@
-# &lt;sgb-markdownview&gt;
+# &lt;juicy-markdownview&gt;
 
 > Polymer Element with GitHub Flavored Markdown (GFM) viewer
 
 ## Demo
 
-[Check it live!](http://Smorgasbord-Development.github.io/sgb-markdownview)
+[Check it live!](http://Juicy.github.io/juicy-markdownview)
 
 ## Install
 
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install sgb-markdownview --save
+$ bower install juicy-markdownview --save
 ```
 
-Or [download as ZIP](https://github.com/Smorgasbord-Development/sgb-markdownview/archive/master.zip).
+Or [download as ZIP](https://github.com/Juicy/juicy-markdownview/archive/master.zip).
 
 ## Usage
 
@@ -27,7 +27,7 @@ Or [download as ZIP](https://github.com/Smorgasbord-Development/sgb-markdownview
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/sgb-markdownview/sgb-markdownview.html">
+    <link rel="import" href="bower_components/juicy-markdownview/juicy-markdownview.html">
     ```
 
 3. Start using it!
