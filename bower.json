@@ -6,7 +6,7 @@
     "andwah <anders.wahlgren@societyobjects.com>",
     "Tomek Wytrebowicz <tomalecpub@gmail.com>"
   ],
-  "description": "Markdown viewer",
+  "description": "Polymer Element with GitHub Flavored Markdown (GFM) viewer",
   "ignore": [
     "**/.*",
     "node_modules",
