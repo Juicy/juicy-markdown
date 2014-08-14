@@ -1,20 +1,20 @@
-# &lt;juicy-markdownview&gt;
+# &lt;juicy-markdown&gt;
 
 > Polymer Element with GitHub Flavored Markdown (GFM) viewer
 
 ## Demo
 
-[Check it live!](http://Juicy.github.io/juicy-markdownview)
+[Check it live!](http://Juicy.github.io/juicy-markdown)
 
 ## Install
 
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install juicy-markdownview --save
+$ bower install juicy-markdown --save
 ```
 
-Or [download as ZIP](https://github.com/Juicy/juicy-markdownview/archive/master.zip).
+Or [download as ZIP](https://github.com/Juicy/juicy-markdown/archive/gh-pages.zip).
 
 ## Usage
 
@@ -27,7 +27,7 @@ Or [download as ZIP](https://github.com/Juicy/juicy-markdownview/archive/master.
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/juicy-markdownview/juicy-markdownview.html">
+    <link rel="import" href="bower_components/juicy-markdown/juicy-markdown.html">
     ```
 
 3. Start using it!
