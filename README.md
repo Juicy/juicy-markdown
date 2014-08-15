@@ -43,6 +43,10 @@ Attribute | Options  | Default | Description
 `value`   | *string* | ``      | Markdown to render.
 `ghcss`   | *boolean* | `false` | Should ghithub-markdown.css be imported?
 
+## See also
+
+ - [`<juicy-markdown-tabbededitor>`](https://github.com/Juicy/juicy-markdown-editor) - simple Markdown editor
+ - [`<juicy-markdown-tabbededitor>`](https://github.com/Juicy/juicy-markdown-tabbededitor) - Markdown editor, with tabs like the one at GitHub.com
 
 ## Contributing
 
