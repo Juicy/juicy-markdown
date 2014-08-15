@@ -7,6 +7,12 @@
     "Tomek Wytrebowicz <tomalecpub@gmail.com>"
   ],
   "description": "Polymer Element with GitHub Flavored Markdown (GFM) viewer",
+  "keywords": [
+    "polymer",
+    "web-components",
+    "juicy",
+    "markdown"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
