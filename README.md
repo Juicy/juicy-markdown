@@ -33,7 +33,7 @@ Or [download as ZIP](https://github.com/Juicy/juicy-markdown/archive/gh-pages.zi
 3. Start using it!
 
     ```html
-    <my-element value="# Markdown here"></my-element>
+    <juicy-markdown value="# Markdown here"></juicy-markdown>
     ```
 
 ## Options
