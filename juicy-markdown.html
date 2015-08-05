@@ -1,76 +1,76 @@
+<html>
 <!--
 Copyright 2014 Smörgåsbord Development. All rights reserved.
 -->
+<head>
 <link rel="import" href="../polymer/polymer.html">
 
 <script src="../marked/lib/marked.js"></script>
 <script src="vendor/highlightjs/highlight.min.js"></script>
 
-<polymer-element name="juicy-markdown" attributes="value ghcss">
+<dom-module id="juicy-markdown">
+  <style>
+    :host { overflow: auto; }
 
-	<template>
+    #preview { height: 100%; width: 100%; }
 
-		<template if="{{ghcss}}">
-			<style>
-			 @import "../github-markdown-css/github-markdown.css";
-			</style>
-    	</template>
-		<link rel="stylesheet" href="vendor/highlightjs/default.min.css">
+    img { max-width:100%; }
+  </style>
+  <template>
+    <template is="dom-if" if="{{ghcss}}">
+      <style>
+        @import "../github-markdown-css/github-markdown.css";
+      </style>
+    </template>
+    <link rel="stylesheet" href="vendor/highlightjs/default.min.css">
 
-		<style>
-			:host {
-
-        		overflow: auto;
-			}
-
-			#preview {
-				
-				height: 100%;
-				width: 100%;
-			}	
-
-			img {
-				max-width:100%;
-			}	
-		</style>
-
-		<!-- TODO: try to remove this layer -->
-		<span id="preview" class="markdown-body"></span>
-
-	</template>
-
-	<script>
-
-	    "use strict";
-
-	    Polymer('juicy-markdown', {
-	    	value: "",
-	    	options: {},
-	    	ghcss: false,
-			created: function() { 
-
-				this.options = {
-					renderer: new marked.Renderer(),
-					gfm: true,
-					tables: true,
-					breaks: true,
-					pedantic: true,
-					sanitize: true,
-					smartLists: true,
-					smartypants: false,
-					highlight: function (code) {
-						return hljs.highlightAuto(code).value;
-					}						
-				};
-			},
-	      	valueChanged: function( oldValue, newValue) {
-
-				this.parseText( newValue );
-	      	},
-	      	parseText: function( text) {
-
-	      		this.$.preview.innerHTML = marked(text,this.options);
-	      	}
-	    });
-	</script>
-</polymer-element>
+    <!-- TODO: try to remove this layer -->
+    <span id="preview" class="markdown-body"></span>
+    </template>
+</dom-module>
+<script>
+  'use strict';
+  Polymer({
+    is: 'juicy-markdown',
+    properties: {
+      ghcss: {
+        type: Boolean,
+        value: false,
+        notify: true
+      },
+      options: {
+        type: Object,
+        value: function () {
+          return {};
+        }
+      },
+      value: {
+        type: String,
+        value: '',
+        notify: true,
+        observer: 'valueChanged'
+      }
+    },
+    created: function () {
+      this.options = {
+        renderer: new marked.Renderer(),
+        gfm: true,
+        tables: true,
+        breaks: true,
+        pedantic: true,
+        sanitize: true,
+        smartLists: true,
+        smartypants: false,
+        highlight: function (code) {
+          return hljs.highlightAuto(code).value;
+        }
+      };
+    },
+    valueChanged: function (newValue, oldValue) {
+      this.parseText(newValue);
+    },
+    parseText: function (text) {
+      this.$.preview.innerHTML = marked(text, this.options);
+    }
+  });
+</script>
