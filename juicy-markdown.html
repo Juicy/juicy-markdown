@@ -1,14 +1,22 @@
 <html>
 <!--
-Copyright 2014 Smörgåsbord Development. All rights reserved.
+Update to 1.0 by carlos araya
 -->
 <head>
-<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
 
-<script src="../marked/lib/marked.js"></script>
-<script src="vendor/highlightjs/highlight.min.js"></script>
+<!--
+  if we're already using bower for everything, why not use it for highlightjs too
+
+  Added highlight.js as a bower dependency
+-->
+<script src="bower_components/marked/lib/marked.js"></script>
+<script src="bower_components/highlightjs/highlight.pack.min.js"></script>
 
 <dom-module id="juicy-markdown">
+  <!--
+    Styles are moved outside templates in 1.0
+  -->
   <style>
     :host { overflow: auto; }
 
@@ -17,6 +25,7 @@ Copyright 2014 Smörgåsbord Development. All rights reserved.
     img { max-width:100%; }
   </style>
   <template>
+    <!-- New way to do template if tags -->
     <template is="dom-if" if="{{ghcss}}">
       <style>
         @import "../github-markdown-css/github-markdown.css";
