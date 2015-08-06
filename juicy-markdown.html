@@ -1,17 +1,14 @@
-<html>
 <!--
+Copyright 2014 Smörgåsbord Development.
 Update to 1.0 by carlos araya
 -->
-<head>
-<link rel="import" href="bower_components/polymer/polymer.html">
-
+<link rel="import" href="../polymer/polymer.html">
 <!--
   if we're already using bower for everything, why not use it for highlightjs too
-
   Added highlight.js as a bower dependency
 -->
-<script src="bower_components/marked/lib/marked.js"></script>
-<script src="bower_components/highlightjs/highlight.pack.min.js"></script>
+<script src="../marked/lib/marked.js"></script>
+<script src="../highlightjs/highlight.pack.min.js"></script>
 
 <dom-module id="juicy-markdown">
   <!--
@@ -28,10 +25,10 @@ Update to 1.0 by carlos araya
     <!-- New way to do template if tags -->
     <template is="dom-if" if="{{ghcss}}">
       <style>
-        @import "bower_components/github-markdown-css/github-markdown.css";
+        @import "../github-markdown-css/github-markdown.css";
       </style>
     </template>
-    <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css">
+    <link rel="stylesheet" href="../highlightjs/styles/default.css">
     <!-- TODO: try to remove this layer -->
     <span id="preview" class="markdown-body"></span>
     </template>
