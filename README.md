@@ -14,7 +14,7 @@ Install the component using [Bower](http://bower.io/):
 $ bower install juicy-markdown --save
 ```
 
-Or [download as ZIP](https://github.com/Juicy/juicy-markdown/archive/gh-pages.zip).
+Or [download as ZIP](https://github.com/Juicy/juicy-markdown/archive/polymer_1.0.zip).
 
 ## Usage
 
