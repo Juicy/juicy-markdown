@@ -24,10 +24,8 @@ version: 1.0.0
   </style>
   <template>
     <!-- New way to do template if tags -->
-    <template is="dom-if" if="{{ghcss}}">
-      <style>
-        @import "../github-markdown-css/github-markdown.css";
-      </style>
+    <template is="dom-if" if="{{ghcss}}" restamp>
+        <link rel="stylesheet" type="text/css" href="http://juicy.github.io/github-markdown-css/github-markdown.css">
     </template>
     <link rel="stylesheet" href="../highlightjs/styles/default.css">
     <!-- TODO: try to remove this layer -->
