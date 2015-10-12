@@ -45,7 +45,7 @@ Attribute | Options  | Default | Description
 
 ## See also
 
- - [`<juicy-markdown-tabbededitor>`](https://github.com/Juicy/juicy-markdown-editor) - simple Markdown editor
+ - [`<juicy-markdown-editor>`](https://github.com/Juicy/juicy-markdown-editor) - simple Markdown editor
  - [`<juicy-markdown-tabbededitor>`](https://github.com/Juicy/juicy-markdown-tabbededitor) - Markdown editor, with tabs like the one at GitHub.com
 
 ## Contributing
