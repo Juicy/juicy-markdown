@@ -4,10 +4,6 @@ Update to Polymer 1.0 by carlos araya
 version: 1.0.0
 -->
 <link rel="import" href="../polymer/polymer.html">
-<!--
-  if we're already using bower for everything, why not use it for highlightjs too
-  Added highlight.js as a bower dependency
--->
 <script src="../marked/lib/marked.js"></script>
 <script src="../highlightjs/highlight.pack.min.js"></script>
 
@@ -71,7 +67,7 @@ version: 1.0.0
       };
     },
     valueChanged: function (newValue, oldValue) {
-      this.parseText(newValue);
+      this.parseText(newValue || '');
     },
     parseText: function (text) {
       this.$.preview.innerHTML = marked(text, this.options);
