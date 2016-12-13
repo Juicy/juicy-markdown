@@ -74,7 +74,7 @@ version: 1.0.0
       this.parseText(newValue);
     },
     parseText: function (text) {
-      this.$.preview.innerHTML = marked(text, this.options);
+      this.$.preview.innerHTML = marked(text ? text : "", this.options);
     }
   });
 </script>
