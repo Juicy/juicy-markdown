@@ -24,7 +24,7 @@
     "preview.png"
   ],
   "dependencies": {
-    "polymer": "polymer/polymer#^1.0.0",
+    "polymer": "polymer/polymer#1.9 - 2",
     "marked": "^0.3.2",
     "github-markdown-css": "^0.2.0",
     "highlightjs": "~8.7.0"
