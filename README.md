@@ -1,3 +1,5 @@
+:warning: This element is **DEPRECATED**. We recommend to use [marked-element](https://github.com/PolymerElements/marked-element) in new projects.
+
 # &lt;juicy-markdown&gt;
 
 > Polymer Element with GitHub Flavored Markdown (GFM) viewer
